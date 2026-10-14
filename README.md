@@ -79,15 +79,3 @@ resources/            app name string, 40x40 launcher icon
 ### Other watches
 
 Only the Forerunner 945 is targeted and tested. The drawing scales with screen size, so other round watches will probably work. Add the device to `<iq:products>` in `manifest.xml`, download its device files in the SDK Manager, and check it in the simulator.
-
-## Optional: publish to the Connect IQ Store
-
-1. `Monkey C: Export Project` → produces `DiceRoller.iq`.
-2. Sign in at https://apps.garmin.com/developer → upload the `.iq` with a description and screenshots.
-3. Garmin reviews it (typically a few days), and then it installs from the Connect IQ mobile app like any other app.
-
-Keep the same developer key for every build of a published app. Store updates must be signed with the original key.
-
-## License
-
-[MIT](LICENSE)
