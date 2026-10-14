@@ -2,6 +2,8 @@
 
 A Connect IQ **device app** (watch-app) that rolls d2, d3, d4, d6, d8, d10, d12 and d20.
 
+> **AI-generated:** This app's code, icon and documentation were written by Claude, an AI model made by Anthropic. The repository owner gave the requirements and published the result. It was tested in the Connect IQ simulator. It's provided as-is under the MIT license, so review the code before relying on it.
+
 ![Dice picker](screenshots/picker.png)
 ![Rolling](screenshots/rolls.png)
 
@@ -58,8 +60,10 @@ To update, copy the new `.prg` over the old one. To remove it, delete the file f
 **Command line** (`monkeyc` is in the SDK's `bin` folder):
 
 ```bash
-monkeyc -d fr945 -f monkey.jungle -o bin/DiceRoller.prg -y path/to/developer_key
+monkeyc -r -d fr945 -f monkey.jungle -o bin/DiceRoller.prg -y path/to/developer_key
 ```
+
+Use `-r` (release build) for any `.prg` you share. Debug builds embed the absolute paths of your source files, including your OS username.
 
 ### Project layout
 
