@@ -1,0 +1,12 @@
+# Build output (prebuilt .prg files go in GitHub releases instead)
+bin/
+*.prg
+*.iq
+*.prg.debug.xml
+
+# Signing keys must never be committed
+developer_key*
+*.der
+*.pem
+
+.vscode/
